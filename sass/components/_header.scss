@@ -2,11 +2,10 @@
 /* component header AGENCY and PORTFOLIO: menu and contact details */
 
 .header {
-  display: flex;
+  padding-top: 23px;
   align-items: center;
   width: 100%;
   height: 80px;
-  justify-content: center;
   background: var(--whitehihi);
   border-bottom: 1px solid var(--border-header);
 }
