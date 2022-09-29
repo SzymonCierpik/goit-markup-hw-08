@@ -1,0 +1,25 @@
+/* Our customers */
+
+.customers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customers__box {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--gray-special);
+  border-radius: 4px;
+  margin-left: 15px;
+  margin-right: 15px;
+  fill: var(--gray-special);
+  cursor: pointer;
+}
+
+.customers__box:hover,
+.customers__box:focus {
+  fill: var(--kamikaze);
+  border-color: var(--kamikaze);
+  transition: 0.5s;
+}

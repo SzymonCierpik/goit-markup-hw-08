@@ -1,0 +1,120 @@
+/* PAGE AGENCY */
+/* component header AGENCY and PORTFOLIO: menu and contact details */
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  justify-content: center;
+  background: var(--whitehihi);
+  border-bottom: 1px solid var(--border-header);
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+@import './header-logo';
+
+.header__menu-list {
+  display: flex;
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.header__menu-list--active-first::after {
+  content: '';
+  display: block;
+  width: 58px;
+  height: 4px;
+  left: 93px;
+  top: 47px;
+  background: var(--kamikaze);
+  border-radius: 2px;
+  position: absolute;
+}
+
+.header__menu-list--active-second::after {
+  content: '';
+  display: block;
+  width: 58px;
+  height: 4px;
+  left: 192px;
+  top: 47px;
+  background: var(--kamikaze);
+  border-radius: 2px;
+  position: absolute;
+}
+
+.header__menu-list--enable {
+  color: var(--kamikaze);
+  font-weight: 500;
+}
+
+.header__menu-list--disable {
+  color: var(--blackhawk);
+  font-weight: 500;
+}
+
+.header__menu-list-agency {
+  margin-left: 93px;
+}
+
+.header__menu-list-portfolio,
+.header__menu-list-contact {
+  padding-left: 46px;
+}
+
+.header__menu-list-email {
+  position: relative;
+  padding-left: 345px;
+  fill: var(--grayhey);
+}
+
+.header__menu-list-phone {
+  padding-left: 50px;
+  fill: var(--grayhey);
+}
+
+.header__menu-list--spacing {
+  margin-right: 5px;
+}
+
+.header__menu-list-email--color,
+.header__menu-list-phone--color {
+  color: var(--grayhey);
+  font-weight: 500;
+}
+
+.header__menu-list-phone--color:hover,
+.header__menu-list-phone--color:focus,
+.header__menu-list-email--color:hover,
+.header__menu-list-email--color:focus,
+.header__menu-list-agency:focus,
+.header__menu-list-agency:hover,
+.header__menu-list-portfolio:focus,
+.header__menu-list-portfolio:hover,
+.header__menu-list-contact:focus,
+.header__menu-list-contact:hover,
+.link:focus,
+.link:hover,
+.fill:hover {
+  color: var(--kamikaze);
+  fill: var(--kamikaze);
+  transition: 0.5s;
+}
+
+.header__menu-list-phone--position {
+  position: relative;
+  bottom: 2px;
+}
+
+.header__menu-list-email--position {
+  position: relative;
+  bottom: 1px;
+}

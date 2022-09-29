@@ -1,0 +1,28 @@
+/* four picture boxes: satellite, clock, computer, astronaut. 
+The pictures are accompanied by descriptions. */
+
+.boxes {
+  background-color: var(--whitehihi);
+  padding-top: 80px;
+}
+
+.boxes__items {
+  display: flex;
+  list-style: none;
+}
+
+.signature {
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--blackho);
+}
+
+.signature--position {
+  padding-top: 10px;
+  width: 270px;
+  height: 75px;
+  line-height: 24px;
+  color: var(--grayhey);
+}

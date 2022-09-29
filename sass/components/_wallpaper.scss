@@ -1,0 +1,20 @@
+/* component wallpaper with heading and button  - people in job ( I hope so) */
+.wallpaper {
+  width: 1600px;
+  height: 600px;
+  border-radius: 0px;
+  background-color: var(--shark);
+  color: var(--whitehihi);
+  background-image: url('../images/img.png');
+}
+
+.wallpaper__background {
+  position: absolute;
+  width: 1600px;
+  height: 600px;
+  background: rgba(47, 48, 58, 0.4);
+}
+.wallpaper__heading {
+  padding-top: 200px;
+  text-align: center;
+}

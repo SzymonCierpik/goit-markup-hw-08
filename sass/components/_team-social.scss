@@ -1,0 +1,21 @@
+.box-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.box-social--circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--gray-special);
+}
+
+.box-social--circle:hover {
+  background-color: var(--kamikaze);
+  fill: var(--whitehihi);
+  cursor: pointer;
+  transition: 0.5s;
+}

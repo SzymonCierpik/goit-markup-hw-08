@@ -1,0 +1,26 @@
+/* section join us */
+
+.joinus {
+  margin-top: 75px;
+  margin-left: 70px;
+}
+.joinus--font {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.joinus__icon {
+  background: var(--background-joinus);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.joinus__icon--margin-left {
+  background: var(--background-joinus);
+  margin-right: 5px;
+}

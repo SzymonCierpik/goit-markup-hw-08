@@ -1,0 +1,91 @@
+/* general variables used throughout the website design */
+
+body {
+  font-family: 'Roboto', 'Raleway', 'Sans-serif';
+  color: var(--grayhey);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.position-boxes {
+  margin: 15px;
+  position: relative;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+}
+
+h3 {
+  color: var(--blackho);
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+form {
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+label {
+  position: relative;
+  display: block;
+  padding-top: 10px;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+input {
+  position: relative;
+  width: 406px;
+  height: 40px;
+  border-radius: 4px;
+  background: none;
+  border-radius: 4px;
+  border: 1px solid var(--blackho);
+  padding-left: 42px;
+}
+
+input:focus,
+textarea:focus {
+  transition: var(--animation-primary);
+  border-color: var(--kamikaze);
+}
+
+label:focus-within svg {
+  fill: var(--kamikaze);
+  transition: var(--animation-primary);
+}
+
