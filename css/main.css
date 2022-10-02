@@ -108,6 +108,16 @@ label:focus-within svg {
   transition: var(--animation-primary);
 }
 
+@media (max-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+  body::-webkit-scrollbar {
+    width: 1px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+  }
+}
 /* PAGE AGENCY */
 /* component header AGENCY and PORTFOLIO: menu and contact details */
 .header {
@@ -121,6 +131,37 @@ label:focus-within svg {
   border-bottom: 1px solid var(--border-header);
 }
 
+@media (max-width: 480px) {
+  .header {
+    height: 60px;
+    width: 480px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 15px;
+  }
+  .header__menu,
+.header__menu-list,
+.header__menu-list--enable,
+.header__menu-list--disable,
+.header__menu-list-agency,
+.header__menu-list-portfolio,
+.header__menu-list-contact,
+.header__menu-list-email,
+.header__menu-list-phone,
+.header__menu-list--spacing,
+.header__menu-list-email--color,
+.header__menu-list-phone--color,
+.header__menu-list-phone--position,
+.header__menu-list-email--position {
+    display: none;
+  }
+  .menu_mobile {
+    background-repeat: no-repeat;
+    background-position-x: 425px;
+    background-position-y: center;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='16' viewBox='0 0 24 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z' fill='black'/%3E%3C/svg%3E%0A");
+  }
+}
 .header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,12 +179,18 @@ label:focus-within svg {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.193;
   text-decoration: none;
   color: var(--blackhawk);
 }
 
+@media (max-width: 480px) {
+  .header__menu-logo {
+    margin-left: 20px;
+    padding-bottom: 16px;
+  }
+}
 .header__menu-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -258,6 +305,19 @@ label:focus-within svg {
   background-image: url("../images/img.png");
 }
 
+@media (max-width: 480px) {
+  .wallpaper {
+    width: 480px;
+    height: 400px;
+    background-image: url("../images/img.png");
+    background-position: center;
+    background-size: 245%;
+    background-repeat: no-repeat;
+  }
+  .wallpaper__background {
+    display: none;
+  }
+}
 .wallpaper__background {
   position: absolute;
   width: 1600px;
