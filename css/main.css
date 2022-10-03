@@ -157,7 +157,7 @@ label:focus-within svg {
   }
   .menu_mobile {
     background-repeat: no-repeat;
-    background-position-x: 425px;
+    background-position-x: 437px;
     background-position-y: center;
     background-image: url("data:image/svg+xml,%3Csvg width='24' height='16' viewBox='0 0 24 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z' fill='black'/%3E%3C/svg%3E%0A");
   }
