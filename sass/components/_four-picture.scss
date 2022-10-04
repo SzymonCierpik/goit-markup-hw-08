@@ -1,28 +1,53 @@
 /* four picture boxes: satellite, clock, computer, astronaut. 
 The pictures are accompanied by descriptions. */
 
-.boxes {
-  background-color: var(--whitehihi);
-  padding-top: 80px;
+@media (min-width: 320px) {
+  .boxes__items {
+    list-style: none;
+    display: block;
+  }
+
+  .signature {
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--blackho);
+  }
+  
+  .signature--position {
+    padding-top: 10px;
+    width: 100%;
+    height: 75px;
+    line-height: 24px;
+    color: var(--grayhey);
+  }
 }
 
-.boxes__items {
-  display: flex;
-  list-style: none;
-}
+@media (min-width: 1200px) {
+  .boxes {
+    background-color: var(--whitehihi);
+    padding-top: 80px;
+  }
 
-.signature {
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  color: var(--blackho);
-}
+  .boxes__items {
+    display: flex;
+    list-style: none;
+  }
 
-.signature--position {
-  padding-top: 10px;
-  width: 270px;
-  height: 75px;
-  line-height: 24px;
-  color: var(--grayhey);
+  .signature {
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--blackho);
+  }
+
+  .signature--position {
+    padding-top: 10px;
+    width: 270px;
+    height: 75px;
+    line-height: 24px;
+    color: var(--grayhey);
+  }
 }

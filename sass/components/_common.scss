@@ -1,5 +1,12 @@
 /* general variables used throughout the website design */
 
+@media (min-width: 1200px){
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+}
+
 body {
   font-family: 'Roboto', 'Raleway', 'Sans-serif';
   color: var(--grayhey);
@@ -12,10 +19,6 @@ body {
   padding: 0;
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
 
 .section {
   padding: 94px 0;
