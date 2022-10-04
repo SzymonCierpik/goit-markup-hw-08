@@ -335,9 +335,9 @@ The pictures are accompanied by descriptions. */
 @media (min-width: 320px) {
   .boxes__items {
     list-style: none;
-    display: block;
   }
   .signature {
+    padding-top: 30px;
     font-weight: 700;
     line-height: 16px;
     letter-spacing: 0.03em;
@@ -350,6 +350,17 @@ The pictures are accompanied by descriptions. */
     height: 75px;
     line-height: 24px;
     color: var(--grayhey);
+  }
+  .box-svg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 120px;
+    background-color: var(--buttonwhite);
   }
 }
 @media (min-width: 1200px) {
