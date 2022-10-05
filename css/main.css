@@ -19,6 +19,7 @@
 /* general variables used throughout the website design */
 .container {
   width: 100%;
+  padding-inline: 15px;
   min-width: 320px;
   max-width: 1200;
   margin: 0 auto;
@@ -644,13 +645,17 @@ The pictures are accompanied by descriptions. */
 .customers-item {
   cursor: pointer;
   border-radius: 4px;
+  -ms-flex-preferred-size: calc(100% - 10px);
+      flex-basis: calc(100% - 10px);
 }
 
 .customers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
 }
 
 .customers__box {
