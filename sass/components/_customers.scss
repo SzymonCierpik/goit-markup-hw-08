@@ -3,7 +3,8 @@
 .customers-item {
   cursor: pointer;
   border-radius: 4px;
-  flex-basis: calc(100% - 30px / 3);
+  border: 1px solid var(--gray-special);
+  flex-basis: calc((100% - 30px) / 2);
 }
 
 .customers {
@@ -15,7 +16,6 @@
 .customers__box {
   width: 170px;
   height: 92px;
-  border: 1px solid var(--gray-special);
   fill: var(--gray-special);
 }
 

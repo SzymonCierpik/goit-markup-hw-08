@@ -49,7 +49,8 @@ body {
 }
 
 .section {
-  padding: 94px 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .position-boxes {
@@ -645,8 +646,9 @@ The pictures are accompanied by descriptions. */
 .customers-item {
   cursor: pointer;
   border-radius: 4px;
-  -ms-flex-preferred-size: calc(100% - 10px);
-      flex-basis: calc(100% - 10px);
+  border: 1px solid var(--gray-special);
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
 }
 
 .customers {
@@ -661,7 +663,6 @@ The pictures are accompanied by descriptions. */
 .customers__box {
   width: 170px;
   height: 92px;
-  border: 1px solid var(--gray-special);
   fill: var(--gray-special);
 }
 
