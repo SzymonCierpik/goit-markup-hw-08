@@ -33,6 +33,10 @@ The pictures are accompanied by descriptions. */
 }
 
 @media (min-width: 1200px) {
+  .box-svg {
+    width: 270px;
+    height: 120px;
+  }
   .boxes {
     background-color: var(--whitehihi);
     padding-top: 80px;
@@ -41,6 +45,7 @@ The pictures are accompanied by descriptions. */
   .boxes__items {
     display: flex;
     list-style: none;
+    justify-items: center;
   }
 
   .signature {
