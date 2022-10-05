@@ -647,7 +647,9 @@ The pictures are accompanied by descriptions. */
 }
 
 .customers {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: 10px;
 }
 
