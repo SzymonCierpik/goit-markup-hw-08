@@ -5,12 +5,14 @@
   border-radius: 4px;
   border: 1px solid var(--gray-special);
   flex-basis: calc((100% - 30px) / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 .customers {
   display: flex;
   flex-wrap: wrap;
-  gap:30px;
+  gap: 30px;
 }
 
 .customers__box {
@@ -26,22 +28,18 @@
   transition: 0.5s;
 }
 
-@media (min-width: 1200px) {
-  .customers {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@media (min-width: 768px) {
+  .customers-item {
+    flex-basis: calc((100% - 60px) / 3);
   }
+}
 
-  .customers__box {
-    width: 170px;
-    height: 92px;
-    border: 1px solid var(--gray-special);
-    border-radius: 4px;
-    margin-left: 15px;
-    margin-right: 15px;
-    fill: var(--gray-special);
-    cursor: pointer;
+@media (min-width: 1200px) {
+  .customers-item {
+    flex-basis: calc((100% - 150px) / 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .customers__box:hover,
