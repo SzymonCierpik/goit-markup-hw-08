@@ -19,7 +19,7 @@
 /* general variables used throughout the website design */
 @media (min-width: 320px) {
   .container {
-    width: 480px;
+    width: 100%;
     margin: 0 auto;
   }
   body::-webkit-scrollbar {
