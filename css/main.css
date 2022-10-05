@@ -17,16 +17,18 @@
 }
 
 /* general variables used throughout the website design */
-@media (min-width: 320px) {
-  .container {
-    width: 100%;
-    margin: 0 auto;
-  }
-  body::-webkit-scrollbar {
-    width: 1px;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-  }
+.container {
+  width: 100%;
+  min-width: 320px;
+  max-width: 1200;
+  margin: 0 auto;
 }
+
+body::-webkit-scrollbar {
+  width: 1px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -639,31 +641,31 @@ The pictures are accompanied by descriptions. */
   }
 }
 /* Our customers */
-@media (min-width: 320px) {
-  .customers {
-    display: block;
-    margin-left: 10px;
-  }
-  .customers__box {
-    width: 170px;
-    height: 92px;
-    border: 1px solid var(--gray-special);
-    border-radius: 4px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    fill: var(--gray-special);
-    cursor: pointer;
-  }
-  .customers__box:hover,
-.customers__box:focus {
-    fill: var(--kamikaze);
-    border-color: var(--kamikaze);
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
+.customers-item {
+  cursor: pointer;
+  border-radius: 4px;
 }
+
+.customers {
+  display: block;
+  margin-left: 10px;
+}
+
+.customers__box {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--gray-special);
+  fill: var(--gray-special);
+}
+
+.customers__box:hover,
+.customers__box:focus {
+  fill: var(--kamikaze);
+  border-color: var(--kamikaze);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 @media (min-width: 1200px) {
   .customers {
     display: -webkit-box;
