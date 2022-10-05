@@ -1,10 +1,21 @@
 /* general variables used throughout the website design */
 
-@media (min-width: 1200px){
-.container {
-  width: 1200px;
-  margin: 0 auto;
+@media (min-width: 320px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+  body::-webkit-scrollbar {
+    width: 1px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+  }
 }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 body {
@@ -18,7 +29,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 
 .section {
   padding: 94px 0;
@@ -35,7 +45,6 @@ h1 {
   line-height: 60px;
   letter-spacing: 0.06em;
 }
-
 
 h3 {
   color: var(--blackho);
@@ -92,15 +101,3 @@ label:focus-within svg {
   fill: var(--kamikaze);
   transition: var(--animation-primary);
 }
-
-@media (max-width: 480px) {
-  .container {
-    width: 480px;
-    margin: 0 auto;
-  }
-  body::-webkit-scrollbar {
-    width: 1px;
-    border: 1px solid rgba(0,0,0,0.25)
-  }
-}
-

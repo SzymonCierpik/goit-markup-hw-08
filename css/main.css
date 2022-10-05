@@ -17,6 +17,16 @@
 }
 
 /* general variables used throughout the website design */
+@media (min-width: 320px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+  body::-webkit-scrollbar {
+    width: 1px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+  }
+}
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -109,16 +119,6 @@ label:focus-within svg {
   transition: var(--animation-primary);
 }
 
-@media (max-width: 480px) {
-  .container {
-    width: 480px;
-    margin: 0 auto;
-  }
-  body::-webkit-scrollbar {
-    width: 1px;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-  }
-}
 /* PAGE AGENCY */
 /* component header AGENCY and PORTFOLIO: menu and contact details */
 .header {
@@ -260,76 +260,114 @@ label:focus-within svg {
 }
 
 /* component wallpaper with heading and button  - people in job ( I hope so) */
-.wallpaper {
-  width: 1600px;
-  height: 600px;
-  border-radius: 0px;
-  background-color: var(--shark);
-  color: var(--whitehihi);
-  background-image: url("../images/img.png");
-}
-
-@media (max-width: 480px) {
+@media (min-width: 320px) {
   .wallpaper {
     width: 480px;
     height: 400px;
     background-image: url("../images/img.png");
     background-position: center;
-    background-size: 245%;
     background-repeat: no-repeat;
   }
   .wallpaper__background {
     display: none;
   }
 }
-.wallpaper__background {
-  position: absolute;
-  width: 1600px;
-  height: 600px;
-  background: rgba(47, 48, 58, 0.4);
+@media (min-width: 1200px) {
+  .wallpaper {
+    width: 1600px;
+    height: 600px;
+    border-radius: 0px;
+    background-color: var(--shark);
+    color: var(--whitehihi);
+    background-image: url("../images/img.png");
+  }
+  .wallpaper__background {
+    position: absolute;
+    width: 1600px;
+    height: 600px;
+    background: rgba(47, 48, 58, 0.4);
+  }
+  .wallpaper__heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 200px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
 }
-
-.wallpaper__heading {
-  padding-top: 200px;
-  text-align: center;
+@media (min-width: 320px) {
+  .wallpaper__button {
+    padding-top: 350px;
+    padding-left: 700px;
+    padding-right: 700px;
+  }
+  .wallpaper__button-specification {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    color: var(--whitehihi);
+    font-weight: 700;
+    font-family: "Roboto";
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    border: none;
+    background: var(--kamikaze);
+    -webkit-box-shadow: 0px 4px 4px var(--shadow-one);
+            box-shadow: 0px 4px 4px var(--shadow-one);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    border-style: none;
+  }
+  .wallpaper__button-specification:hover {
+    background: var(--whitehihi);
+    -webkit-box-shadow: 0px 4px 4px var(--shadow-one);
+            box-shadow: 0px 4px 4px var(--shadow-one);
+    border-radius: 4px;
+    -webkit-transition: ease-in 250ms;
+    transition: ease-in 250ms;
+    color: var(--kamikaze);
+  }
 }
-
-.wallpaper__button {
-  padding-top: 350px;
-  padding-left: 700px;
-  padding-right: 700px;
+@media (min-width: 1200px) {
+  .wallpaper__button {
+    padding-top: 350px;
+    padding-left: 700px;
+    padding-right: 700px;
+  }
+  .wallpaper__button-specification {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    color: var(--whitehihi);
+    font-weight: 700;
+    font-family: "Roboto";
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    border: none;
+    background: var(--kamikaze);
+    -webkit-box-shadow: 0px 4px 4px var(--shadow-one);
+            box-shadow: 0px 4px 4px var(--shadow-one);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    border-style: none;
+  }
+  .wallpaper__button-specification:hover {
+    background: var(--whitehihi);
+    -webkit-box-shadow: 0px 4px 4px var(--shadow-one);
+            box-shadow: 0px 4px 4px var(--shadow-one);
+    border-radius: 4px;
+    -webkit-transition: ease-in 250ms;
+    transition: ease-in 250ms;
+    color: var(--kamikaze);
+  }
 }
-
-.wallpaper__button-specification {
-  position: relative;
-  width: 200px;
-  height: 50px;
-  color: var(--whitehihi);
-  font-weight: 700;
-  font-family: "Roboto";
-  font-size: 16px;
-  letter-spacing: 0.06em;
-  text-align: center;
-  border: none;
-  background: var(--kamikaze);
-  -webkit-box-shadow: 0px 4px 4px var(--shadow-one);
-          box-shadow: 0px 4px 4px var(--shadow-one);
-  border-radius: 4px;
-  cursor: pointer;
-  border: none;
-  border-style: none;
-}
-
-.wallpaper__button-specification:hover {
-  background: var(--whitehihi);
-  -webkit-box-shadow: 0px 4px 4px var(--shadow-one);
-          box-shadow: 0px 4px 4px var(--shadow-one);
-  border-radius: 4px;
-  -webkit-transition: ease-in 250ms;
-  transition: ease-in 250ms;
-  color: var(--kamikaze);
-}
-
 /* four picture boxes: satellite, clock, computer, astronaut. 
 The pictures are accompanied by descriptions. */
 @media (min-width: 320px) {

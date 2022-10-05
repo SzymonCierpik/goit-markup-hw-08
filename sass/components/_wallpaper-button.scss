@@ -1,32 +1,69 @@
-.wallpaper__button {
-  padding-top: 350px;
-  padding-left: 700px;
-  padding-right: 700px;
+@media (min-width: 320px) {
+  .wallpaper__button {
+    padding-top: 350px;
+    padding-left: 700px;
+    padding-right: 700px;
+  }
+
+  .wallpaper__button-specification {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    color: var(--whitehihi);
+    font-weight: 700;
+    font-family: 'Roboto';
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    border: none;
+    background: var(--kamikaze);
+    box-shadow: 0px 4px 4px var(--shadow-one);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    border-style: none;
+  }
+
+  .wallpaper__button-specification:hover {
+    background: var(--whitehihi);
+    box-shadow: 0px 4px 4px var(--shadow-one);
+    border-radius: 4px;
+    transition: ease-in 250ms;
+    color: var(--kamikaze);
+  }
 }
 
-.wallpaper__button-specification {
-  position: relative;
-  width: 200px;
-  height: 50px;
-  color: var(--whitehihi);
-  font-weight: 700;
-  font-family: 'Roboto';
-  font-size: 16px;
-  letter-spacing: 0.06em;
-  text-align: center;
-  border: none;
-  background: var(--kamikaze);
-  box-shadow: 0px 4px 4px var(--shadow-one);
-  border-radius: 4px;
-  cursor: pointer;
-  border: none;
-  border-style: none;
-}
+@media (min-width: 1200px) {
+  .wallpaper__button {
+    padding-top: 350px;
+    padding-left: 700px;
+    padding-right: 700px;
+  }
 
-.wallpaper__button-specification:hover {
-  background: var(--whitehihi);
-  box-shadow: 0px 4px 4px var(--shadow-one);
-  border-radius: 4px;
-  transition: ease-in 250ms;
-  color: var(--kamikaze);
+  .wallpaper__button-specification {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    color: var(--whitehihi);
+    font-weight: 700;
+    font-family: 'Roboto';
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    border: none;
+    background: var(--kamikaze);
+    box-shadow: 0px 4px 4px var(--shadow-one);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    border-style: none;
+  }
+
+  .wallpaper__button-specification:hover {
+    background: var(--whitehihi);
+    box-shadow: 0px 4px 4px var(--shadow-one);
+    border-radius: 4px;
+    transition: ease-in 250ms;
+    color: var(--kamikaze);
+  }
 }
