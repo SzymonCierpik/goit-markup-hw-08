@@ -1,7 +1,6 @@
 /* four picture boxes: satellite, clock, computer, astronaut. 
 The pictures are accompanied by descriptions. */
 
-@media (min-width: 320px) {
   .boxes__items {
     list-style: none;
   }
@@ -30,7 +29,6 @@ The pictures are accompanied by descriptions. */
     height: 120px;
     background-color: var(--buttonwhite);
   }
-}
 
 @media (min-width: 1200px) {
   .box-svg {

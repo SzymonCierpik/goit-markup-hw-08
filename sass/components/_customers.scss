@@ -16,13 +16,15 @@
 }
 
 .customers__box {
-  width: 170px;
+  width: 167px;
   height: 92px;
   fill: var(--gray-special);
 }
 
 .customers__box:hover,
-.customers__box:focus {
+.customers__box:focus,
+.customers-item:focus,
+.customers-item:hover {
   fill: var(--kamikaze);
   border-color: var(--kamikaze);
   transition: 0.5s;
@@ -32,6 +34,7 @@
   .customers-item {
     flex-basis: calc((100% - 60px) / 3);
   }
+
 }
 
 @media (min-width: 1200px) {
@@ -41,11 +44,5 @@
     justify-content: center;
     align-items: center;
   }
-
-  .customers__box:hover,
-  .customers__box:focus {
-    fill: var(--kamikaze);
-    border-color: var(--kamikaze);
-    transition: 0.5s;
   }
-}
+

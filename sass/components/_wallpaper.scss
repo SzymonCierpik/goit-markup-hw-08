@@ -1,6 +1,4 @@
 /* component wallpaper with heading and button  - people in job ( I hope so) */
-
-@media (min-width: 320px) {
   .wallpaper {
     width: 480px;
     height: 400px;
@@ -11,7 +9,7 @@
   .wallpaper__background {
     display: none;
   }
-}
+
 
 @media (min-width: 1200px) {
   .wallpaper {

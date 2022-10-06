@@ -264,18 +264,18 @@ label:focus-within svg {
 }
 
 /* component wallpaper with heading and button  - people in job ( I hope so) */
-@media (min-width: 320px) {
-  .wallpaper {
-    width: 480px;
-    height: 400px;
-    background-image: url("../images/img.png");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .wallpaper__background {
-    display: none;
-  }
+.wallpaper {
+  width: 480px;
+  height: 400px;
+  background-image: url("../images/img.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
+.wallpaper__background {
+  display: none;
+}
+
 @media (min-width: 1200px) {
   .wallpaper {
     width: 1600px;
@@ -302,41 +302,42 @@ label:focus-within svg {
     text-align: center;
   }
 }
-@media (min-width: 320px) {
-  .wallpaper__button {
-    padding-top: 350px;
-    padding-left: 700px;
-    padding-right: 700px;
-  }
-  .wallpaper__button-specification {
-    position: relative;
-    width: 200px;
-    height: 50px;
-    color: var(--whitehihi);
-    font-weight: 700;
-    font-family: "Roboto";
-    font-size: 16px;
-    letter-spacing: 0.06em;
-    text-align: center;
-    border: none;
-    background: var(--kamikaze);
-    -webkit-box-shadow: 0px 4px 4px var(--shadow-one);
-            box-shadow: 0px 4px 4px var(--shadow-one);
-    border-radius: 4px;
-    cursor: pointer;
-    border: none;
-    border-style: none;
-  }
-  .wallpaper__button-specification:hover {
-    background: var(--whitehihi);
-    -webkit-box-shadow: 0px 4px 4px var(--shadow-one);
-            box-shadow: 0px 4px 4px var(--shadow-one);
-    border-radius: 4px;
-    -webkit-transition: ease-in 250ms;
-    transition: ease-in 250ms;
-    color: var(--kamikaze);
-  }
+.wallpaper__button {
+  padding-top: 350px;
+  padding-left: 700px;
+  padding-right: 700px;
 }
+
+.wallpaper__button-specification {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  color: var(--whitehihi);
+  font-weight: 700;
+  font-family: "Roboto";
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  border: none;
+  background: var(--kamikaze);
+  -webkit-box-shadow: 0px 4px 4px var(--shadow-one);
+          box-shadow: 0px 4px 4px var(--shadow-one);
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  border-style: none;
+}
+
+.wallpaper__button-specification:hover {
+  background: var(--whitehihi);
+  -webkit-box-shadow: 0px 4px 4px var(--shadow-one);
+          box-shadow: 0px 4px 4px var(--shadow-one);
+  border-radius: 4px;
+  -webkit-transition: ease-in 250ms;
+  transition: ease-in 250ms;
+  color: var(--kamikaze);
+}
+
 @media (min-width: 1200px) {
   .wallpaper__button {
     padding-top: 350px;
@@ -374,37 +375,39 @@ label:focus-within svg {
 }
 /* four picture boxes: satellite, clock, computer, astronaut. 
 The pictures are accompanied by descriptions. */
-@media (min-width: 320px) {
-  .boxes__items {
-    list-style: none;
-  }
-  .signature {
-    padding-top: 30px;
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    color: var(--blackho);
-  }
-  .signature--position {
-    padding-top: 10px;
-    width: 100%;
-    height: 75px;
-    line-height: 24px;
-    color: var(--grayhey);
-  }
-  .box-svg {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-    height: 120px;
-    background-color: var(--buttonwhite);
-  }
+.boxes__items {
+  list-style: none;
 }
+
+.signature {
+  padding-top: 30px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--blackho);
+}
+
+.signature--position {
+  padding-top: 10px;
+  width: 100%;
+  height: 75px;
+  line-height: 24px;
+  color: var(--grayhey);
+}
+
+.box-svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 120px;
+  background-color: var(--buttonwhite);
+}
+
 @media (min-width: 1200px) {
   .box-svg {
     width: 270px;
@@ -467,6 +470,91 @@ The pictures are accompanied by descriptions. */
     color: var(--whitehihi);
   }
 }
+/* Our team: four people signed with their full name and contact details */
+@media (min-width: 320px) {
+  .team-position {
+    display: flexbox;
+  }
+  .team-background {
+    background-color: var(--whatitis);
+  }
+  .team__photo-position {
+    margin: 15px;
+    background: var(--whitehihi);
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .team__photo-signature {
+    text-align: center;
+    background-color: var(--whitehihi);
+    padding-top: 30px;
+    padding-bottom: 16px;
+  }
+  .team__photo-signature--details {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--blackhawk);
+    margin-left: 24px;
+    margin-top: 20px;
+    margin-right: 24px;
+  }
+  .box-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 24px;
+  }
+  .box-social--circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--gray-special);
+  }
+  .box-social--circle:hover {
+    background-color: var(--kamikaze);
+    fill: var(--whitehihi);
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+}
+@media (min-width: 320px) and (min-width: 1200px) {
+  .box-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+  .box-social--circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--gray-special);
+  }
+  .box-social--circle:hover {
+    background-color: var(--kamikaze);
+    fill: var(--whitehihi);
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+}
 @media (min-width: 1200px) {
   .team-position {
     display: -webkit-box;
@@ -500,8 +588,6 @@ The pictures are accompanied by descriptions. */
     margin-top: 20px;
     margin-right: 24px;
   }
-}
-@media (min-width: 1200px) and (min-width: 320px) {
   .box-social {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -529,93 +615,6 @@ The pictures are accompanied by descriptions. */
   }
 }
 @media (min-width: 1200px) and (min-width: 1200px) {
-  .box-social {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 10px;
-  }
-  .box-social--circle {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    fill: var(--gray-special);
-  }
-  .box-social--circle:hover {
-    background-color: var(--kamikaze);
-    fill: var(--whitehihi);
-    cursor: pointer;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-}
-/* Our team: four people signed with their full name and contact details */
-@media (min-width: 320px) {
-  .team-position {
-    display: flexbox;
-  }
-  .team-background {
-    background-color: var(--whatitis);
-  }
-  .team__photo-position {
-    margin: 15px;
-    background: var(--whitehihi);
-    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-  }
-  .team__photo-signature {
-    text-align: center;
-    background-color: var(--whitehihi);
-    padding-top: 30px;
-    padding-bottom: 16px;
-  }
-  .team__photo-signature--details {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: var(--blackhawk);
-    margin-left: 24px;
-    margin-top: 20px;
-    margin-right: 24px;
-  }
-}
-@media (min-width: 320px) and (min-width: 320px) {
-  .box-social {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-bottom: 24px;
-  }
-  .box-social--circle {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    fill: var(--gray-special);
-  }
-  .box-social--circle:hover {
-    background-color: var(--kamikaze);
-    fill: var(--whitehihi);
-    cursor: pointer;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-}
-@media (min-width: 320px) and (min-width: 1200px) {
   .box-social {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -670,13 +669,15 @@ The pictures are accompanied by descriptions. */
 }
 
 .customers__box {
-  width: 170px;
+  width: 167px;
   height: 92px;
   fill: var(--gray-special);
 }
 
 .customers__box:hover,
-.customers__box:focus {
+.customers__box:focus,
+.customers-item:focus,
+.customers-item:hover {
   fill: var(--kamikaze);
   border-color: var(--kamikaze);
   -webkit-transition: 0.5s;
@@ -702,13 +703,6 @@ The pictures are accompanied by descriptions. */
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .customers__box:hover,
-.customers__box:focus {
-    fill: var(--kamikaze);
-    border-color: var(--kamikaze);
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
   }
 }
 /* footer section */
