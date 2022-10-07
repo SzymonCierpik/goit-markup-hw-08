@@ -1,5 +1,11 @@
 /* Our customers */
 
+.customers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 .customers-item {
   cursor: pointer;
   border-radius: 4px;
@@ -8,11 +14,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.customers {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
 }
 
 .customers__box {
@@ -34,7 +35,6 @@
   .customers-item {
     flex-basis: calc((100% - 60px) / 3);
   }
-
 }
 
 @media (min-width: 1200px) {

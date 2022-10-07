@@ -471,64 +471,70 @@ The pictures are accompanied by descriptions. */
   }
 }
 /* Our team: four people signed with their full name and contact details */
-@media (min-width: 320px) {
-  .team-position {
-    display: flexbox;
-  }
-  .team-background {
-    background-color: var(--whatitis);
-  }
-  .team__photo-position {
-    margin: 15px;
-    background: var(--whitehihi);
-    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-  }
-  .team__photo-signature {
-    text-align: center;
-    background-color: var(--whitehihi);
-    padding-top: 30px;
-    padding-bottom: 16px;
-  }
-  .team__photo-signature--details {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: var(--blackhawk);
-    margin-left: 24px;
-    margin-top: 20px;
-    margin-right: 24px;
-  }
-  .box-social {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-bottom: 24px;
-  }
-  .box-social--circle {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    fill: var(--gray-special);
-  }
-  .box-social--circle:hover {
-    background-color: var(--kamikaze);
-    fill: var(--whitehihi);
-    cursor: pointer;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
+.team-position {
+  display: flexbox;
 }
-@media (min-width: 320px) and (min-width: 1200px) {
+
+.team-background {
+  background-color: var(--whatitis);
+}
+
+.team__photo-position {
+  margin: 15px;
+  background: var(--whitehihi);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__photo-signature {
+  text-align: center;
+  background-color: var(--whitehihi);
+  padding-top: 30px;
+  padding-bottom: 16px;
+}
+
+.team__photo-signature--details {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--blackhawk);
+  margin-left: 24px;
+  margin-top: 20px;
+  margin-right: 24px;
+}
+
+.box-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 24px;
+}
+
+.box-social--circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--gray-special);
+}
+
+.box-social--circle:hover {
+  background-color: var(--kamikaze);
+  fill: var(--whitehihi);
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media (min-width: 1200px) {
   .box-social {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -642,6 +648,15 @@ The pictures are accompanied by descriptions. */
   }
 }
 /* Our customers */
+.customers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
 .customers-item {
   cursor: pointer;
   border-radius: 4px;
@@ -657,15 +672,6 @@ The pictures are accompanied by descriptions. */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.customers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
 }
 
 .customers__box {
@@ -765,7 +771,7 @@ The pictures are accompanied by descriptions. */
 /* section join us */
 .joinus {
   margin-top: 75px;
-  margin-left: 70px;
+  margin-left: 50px;
 }
 
 .joinus--font {

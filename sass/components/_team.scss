@@ -1,6 +1,4 @@
 /* Our team: four people signed with their full name and contact details */
-
-@media (min-width: 320px) {
   .team-position {
     display: flexbox;
   }
@@ -37,7 +35,7 @@
   }
 
   @import './team-social';
-}
+
 
 @media (min-width: 1200px) {
   .team-position {
