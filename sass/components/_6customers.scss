@@ -43,3 +43,54 @@
     }
   }
 }
+
+@media screen and (max-width: $lg) {
+  .customers {
+    background: $white;
+
+    &__container {
+      @extend .container;
+      position: relative;
+      z-index: 1;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      fill: $white-third;
+      gap: 30px;
+      margin-bottom: 94px;
+    }
+
+    &__heading {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.16;
+      letter-spacing: 0.03em;
+      color: $black-second;
+      text-align: center;
+      padding-top: 94px;
+    }
+
+    &__customers__item {
+      flex-basis: calc((100% - 60px) / 3);
+    }
+
+    &__icon {
+      height: 92px;
+      width: 100%;
+      border: 1px solid $white-third;
+      border-radius: 4px;
+
+      &:hover,
+      &:focus {
+        fill: $blue;
+        border-color: $blue;
+        transition: $animation;
+        cursor: pointer;
+      }
+    }
+  }
+}
