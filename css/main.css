@@ -663,6 +663,10 @@ img {
   position: relative;
   z-index: 1;
 }
+.customers__customers__item {
+  -ms-flex-preferred-size: calc((100% - 60px) / 3);
+      flex-basis: calc((100% - 60px) / 3);
+}
 .customers__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -688,7 +692,7 @@ img {
 }
 .customers__icon {
   height: 92px;
-  width: 170px;
+  width: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }

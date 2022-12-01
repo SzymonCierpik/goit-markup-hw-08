@@ -9,6 +9,9 @@
     z-index: 1;
   }
 
+  &__customers__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
   &__list {
     display: flex;
     align-items: center;
@@ -30,7 +33,7 @@
 
   &__icon {
     height: 92px;
-    width: 170px;
+    width: 100%;
     border: 1px solid $white-third;
     border-radius: 4px;
 
