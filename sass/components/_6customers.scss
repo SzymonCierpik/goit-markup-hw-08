@@ -1,0 +1,45 @@
+/* <!-- C U S T O M E R S --><!-- C U S T O M E R S --><!-- C U S T O M E R S --><!-- C U S T O M E R S --> */
+
+.customers {
+  background: $white;
+
+  &__container {
+    @extend .container;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    fill: $white-third;
+    gap: 30px;
+    margin-bottom: 94px;
+  }
+
+  &__heading {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: $black-second;
+    text-align: center;
+    padding-top: 94px;
+  }
+
+  &__icon {
+    height: 92px;
+    width: 170px;
+    border: 1px solid $white-third;
+    border-radius: 4px;
+
+    &:hover,
+    &:focus {
+      fill: $blue;
+      border-color: $blue;
+      transition: $animation;
+      cursor: pointer;
+    }
+  }
+}

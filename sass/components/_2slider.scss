@@ -1,0 +1,51 @@
+/* <!-- E F F E C T I V E  S O L U T I O N S --><!-- E F F E C T I V E  S O L U T I O N S --><!-- E F F E C T I V E  S O L U T I O N S --><!-- E F F E C T I V E  S O L U T I O N S --> */
+
+.slider {
+  background: $gray-second;
+  text-align: center;
+  height: 600px;
+  background-image: url('../images/img.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+
+  &__container {
+    @extend .container;
+    position: relative;
+    z-index: 1;
+  }
+  &__heading {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: $white;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 30px;
+  }
+  &__button {
+    @extend .button-theme;
+    left: 700px;
+    color: $white;
+
+    &:focus,
+    &:hover {
+      color: $black;
+      border-color: $blue;
+      transition: $animation;
+    }
+  }
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 600px;
+    background: $slider-color;
+    display: flex;
+    position: absolute;
+    top: 0;
+  }
+}

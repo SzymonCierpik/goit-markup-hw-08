@@ -1,0 +1,79 @@
+/* <!-- O U R  T E A M --><!-- O U R  T E A M --><!-- O U R  T E A M --><!-- O U R  T E A M --> */
+
+.team {
+  background: $button-color;
+
+  &__container {
+    @extend .container;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__heading {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: $black-second;
+    text-align: center;
+    padding-top: 94px;
+  }
+
+  &__list {
+    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 94px;
+  }
+
+  &__card {
+    background: $white;
+    box-shadow: $shadow-team;
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+  }
+
+  &__caption {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: $black-second;
+  }
+
+  &__spec {
+    color: $gray;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: $white;
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    fill: $white-third;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: $blue;
+      cursor: pointer;
+      fill: $white;
+      transition: $animation;
+    }
+  }
+}
