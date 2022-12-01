@@ -3,7 +3,6 @@
 .slider {
   background: $gray-second;
   text-align: center;
-  height: 600px;
   background-image: url('../images/img.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -47,5 +46,58 @@
     display: flex;
     position: absolute;
     top: 0;
+  }
+}
+
+@media screen and (max-width: $lg) {
+  .slider {
+    background: $gray-second;
+    text-align: center;
+    height: 400px;
+    background-image: url('../images/img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin: 0 auto;
+    position: relative;
+
+    &__container {
+      @extend .container;
+      position: relative;
+      z-index: 1;
+    }
+    &__heading {
+      font-family: Roboto;
+      font-size: 26px;
+      font-weight: 900;
+      line-height: 42px;
+      letter-spacing: 0.06em;
+      text-align: center;
+      padding-top: 118px;
+      padding-bottom: 40px;
+      color: $white;
+    }
+    &__button {
+      @extend .button-theme;
+      left: 700px;
+      color: $white;
+
+      &:focus,
+      &:hover {
+        color: $black;
+        border-color: $blue;
+        transition: $animation;
+      }
+    }
+
+    &::after {
+      content: '';
+      width: 100%;
+      height: 400px;
+      background: $slider-color;
+      display: flex;
+      position: absolute;
+      top: 0;
+    }
   }
 }

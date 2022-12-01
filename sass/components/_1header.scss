@@ -143,5 +143,14 @@
       letter-spacing: 0.02em;
       gap: 60px;
     }
+    
+    &__list--tablet {
+      display: flex;
+      list-style: none;
+      flex-direction: column;
+      gap:0;
+      
+      
+    }
   }
 }
