@@ -45,8 +45,13 @@ ul {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: auto;;
 }
 
 .button-theme {
@@ -64,8 +69,9 @@ ul {
 
 @media screen and (max-width: $lg) {
   .container {
-    width: 768px;
+    
     margin: 0 auto;
+    padding-inline:15px;
   }
 
 }

@@ -78,8 +78,13 @@ ul {
 }
 
 .container, .products__container, .footer__container, .customers__container, .team__container, .offer__container, .article__container, .slider__container, .navbar__container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 .button-theme, .modal__button-send, .footer__button-icon, .slider__button {
@@ -98,8 +103,8 @@ ul {
 
 @media screen and (max-width: 1200px) {
   .container, .products__container, .footer__container, .customers__container, .team__container, .offer__container, .article__container, .slider__container, .navbar__container {
-    width: 768px;
     margin: 0 auto;
+    padding-inline: 15px;
   }
 }
 /*<!-- H E A D E R --><!-- H E A D E R --><!-- H E A D E R --><!-- H E A D E R --> */
@@ -240,8 +245,10 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
   }
   .navbar__container {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -624,8 +631,8 @@ ul {
     padding-bottom: 94px;
   }
   .team__card {
-    -ms-flex-preferred-size: 33.3333333333%;
-        flex-basis: 33.3333333333%;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
     background: #ffffff;
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);

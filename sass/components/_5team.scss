@@ -107,7 +107,7 @@
     }
 
     &__card {
-      flex-basis:calc(100%/3);
+      flex-basis: calc((100% - 30px) / 2);
       background: $white;
       box-shadow: $shadow-team;
       border-radius: 0px 0px 4px 4px;
