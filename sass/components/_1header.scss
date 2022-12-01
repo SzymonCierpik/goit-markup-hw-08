@@ -14,9 +14,11 @@
 
 .navbar {
   display: flex;
+  width: 100%;
 
   &__container {
     @extend .container;
+    width: 100%;
     display: flex;
     height: 80px;
     justify-content: space-between;
@@ -116,11 +118,9 @@
 
   .navbar {
     display: flex;
-    width: 100%;
-
     &__container {
       @extend .container;
-      width: 100%;
+  
       display: flex;
       height: 80px;
       justify-content: space-between;
