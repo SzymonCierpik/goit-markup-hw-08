@@ -258,11 +258,188 @@
     &__button {
       margin-top: -60px;
       margin-left: 0;
-      
     }
 
     &__button-icon {
       @extend .button-theme;
+      color: $button-color;
+      border-color: $blue;
+      line-height: 30px;
+      background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z' fill='white'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-position-x: 148px;
+      background-position-y: 12px;
+      &:focus,
+      &:hover {
+        color: $black;
+        border-color: $blue;
+        transition: $animation;
+      }
+    }
+  }
+
+  .address {
+    margin-top: 20px;
+
+    &__item {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: $gray-footer;
+      font-style: normal;
+      padding-top: 9px;
+      color: $white;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__item--color {
+      text-decoration: none;
+      color: $gray-footer;
+      font-style: normal;
+
+      &:hover,
+      &:focus {
+        color: $white;
+      }
+    }
+  }
+
+  .logo--color-footer {
+    color: $white;
+  }
+}
+
+// @media screen@media screen@media screen@media screen@media screen@media screen
+// @media screen@media screen@media screen@media screenv@media screen@media screen
+// @media screen@media screen@media screen@media screen@media screen@media screen
+// @media screen@media screen@media screen@media screen@media screen@media screen
+// @media screen@media screen@media screen@media screen@media screen@media screen
+// @media screen@media screen@media screen@media screenv@media screen@media screen
+// @media screen@media screen@media screen@media screen@media screen@media screen
+// @media screen@media screen@media screen@media screen@media screen@media screen
+
+@media screen and (max-width: $md) {
+  .footer {
+    background-color: $gray-second;
+    height: 603px;
+
+    &__container {
+      margin: 0 auto;
+      padding-inline: 15px;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__logo {
+      display: flex;
+      justify-content: center;
+    }
+    &__logo--style {
+      text-decoration: none;
+      font-family: 'Raleway';
+      font-size: 26px;
+      line-height: 1.19;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      color: $black;
+      padding: 0;
+      display: flex;
+    }
+    &__tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+    }
+    &__tablet-second {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+    }
+    &__column {
+      margin-top: 0;
+    }
+
+    &__heading {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $white;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__social {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+      justify-content: center;
+    }
+
+    &__social-icon {
+      width: 40px;
+      height: 40px;
+      fill: $white;
+      border-radius: 50%;
+      background-color: $social-background;
+
+      &:hover {
+        fill: $white;
+        background: $blue;
+        transition: $animation;
+        cursor: pointer;
+      }
+    }
+
+    &__textarea {
+      margin-top: 10px;
+      padding-left: 16px;
+      padding-top: 16px;
+      width: 450px;
+      height: 50px;
+      border: 1px solid $gray-footer;
+      filter: drop-shadow($shadow);
+      border-radius: 4px;
+      resize: none;
+      background: $gray-second;
+      color: $gray-footer;
+      font-size: 16px;
+
+      &::placeholder {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        color: $gray-footer;
+      }
+    }
+
+    &__button {
+      margin-top: -60px;
+      margin-left: 0;
+    }
+
+    &__button-icon {
+      background: $blue;
+      box-shadow: $shadow;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 200px;
+      height: 50px;
+      font-weight: 700;
+      line-height: 1.86;
+      letter-spacing: 0.06em;
+
       color: $button-color;
       border-color: $blue;
       line-height: 30px;

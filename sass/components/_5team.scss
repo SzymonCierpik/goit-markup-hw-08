@@ -130,3 +130,64 @@
   }
 }
 
+// @media screen@media screen@media screen@media screen@media screen@media screen
+// @media screen@media screen@media screen@media screenv@media screen@media screen
+// @media screen@media screen@media screen@media screen@media screen@media screen
+// @media screen@media screen@media screen@media screen@media screen@media screen
+// @media screen@media screen@media screen@media screen@media screen@media screen
+// @media screen@media screen@media screen@media screenv@media screen@media screen
+// @media screen@media screen@media screen@media screen@media screen@media screen
+// @media screen@media screen@media screen@media screen@media screen@media screen
+
+@media screen and (max-width: $md) {
+  .team {
+    background: $button-color;
+
+    &__container {
+      margin: 0 auto;
+      padding-inline: 15px;
+      position: relative;
+      z-index: 1;
+    }
+
+    &__heading {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.16;
+      letter-spacing: 0.03em;
+      color: $black-second;
+      text-align: center;
+      padding-top: 94px;
+    }
+
+    &__list {
+      gap: 30px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-bottom: 94px;
+    }
+
+    &__card {
+      flex-basis: calc(100%);
+      background: $white;
+      box-shadow: $shadow-team;
+      border-radius: 0px 0px 4px 4px;
+      text-align: center;
+    }
+
+    &__caption {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.18;
+      letter-spacing: 0.03em;
+      color: $black-second;
+    }
+
+    &__spec {
+      color: $gray;
+      font-weight: 400;
+      margin-bottom: 16px;
+    }
+  }
+}
