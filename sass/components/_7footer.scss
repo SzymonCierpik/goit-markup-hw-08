@@ -159,6 +159,7 @@
   .footer {
     background-color: $gray-second;
     height: 463px;
+    margin-top: 0;
 
     &__container {
       @extend .container;

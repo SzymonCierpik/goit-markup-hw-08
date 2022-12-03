@@ -1140,6 +1140,7 @@ img {
   .footer {
     background-color: #2f303a;
     height: 463px;
+    margin-top: 0;
   }
   .footer__container {
     position: relative;
