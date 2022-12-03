@@ -1,0 +1,135 @@
+.menu-toggle {
+  display: none;
+}
+
+.mobile-menu .link {
+  color: transparent;
+}
+.mobile-menu-second {
+  color: transparent;
+}
+
+@media screen and (max-width: $lg) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $md) {
+  .menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+  }
+
+  .menu-toggle:hover svg,
+  .menu-toggle:focus svg {
+    fill: $blue;
+  }
+
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+    background-color: $white;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
+
+  .menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: $black;
+  }
+
+  .mobile-menu,
+  .mobile-menu-second {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .mobile-menu .link {
+    display: block;
+    padding-left: 40px;
+    padding-top: 35px;
+    color: $black;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+  }
+
+  .mobile-menu-second .link {
+    display: block;
+    padding-left: 40px;
+    padding-top: 32px;
+    text-decoration: none;
+  }
+
+  .link:hover {
+    color: $blue;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+  }
+
+  .link--bottom {
+    margin-bottom: 300px;
+  }
+
+  .link--blue {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: $blue;
+  }
+  .link--gray {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: $gray;
+    margin-bottom: 64px;
+  }
+  .mobile-menu-third {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: $blue;
+    list-style: none;
+    display: flex;
+    padding-left: 40px;
+  }
+
+  .mobile-social {
+    padding-inline: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height, or 122% */
+
+    letter-spacing: 0.02em;
+  }
+}
