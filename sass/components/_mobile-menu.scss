@@ -2,10 +2,8 @@
   display: none;
 }
 
-.mobile-menu .link {
-  color: transparent;
-}
-.mobile-menu-second {
+.link-one,
+.mobile-social {
   color: transparent;
 }
 
@@ -57,7 +55,6 @@
     position: absolute;
     top: 16px;
     right: 16px;
-    color: $black;
   }
 
   .mobile-menu,
@@ -67,7 +64,7 @@
     list-style: none;
   }
 
-  .mobile-menu .link {
+  .mobile-menu .link-one {
     display: block;
     padding-left: 40px;
     padding-top: 35px;
@@ -81,30 +78,30 @@
     letter-spacing: 0.02em;
   }
 
-  .mobile-menu-second .link {
+  .mobile-menu-second .link-one {
     display: block;
     padding-left: 40px;
     padding-top: 32px;
     text-decoration: none;
   }
 
-  .link:hover {
+  .link-one:hover {
     color: $blue;
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
   }
 
-  .link--bottom {
+  .link-one--bottom {
     margin-bottom: 300px;
   }
 
-  .link--blue {
+  .link-one--blue {
     font-weight: 500;
     font-size: 34px;
     line-height: 40px;
     letter-spacing: 0.02em;
     color: $blue;
   }
-  .link--gray {
+  .link-one--gray {
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
@@ -113,23 +110,25 @@
     margin-bottom: 64px;
   }
   .mobile-menu-third {
+    display: block;
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.02em;
-    color: $blue;
+    
     list-style: none;
     display: flex;
-    padding-left: 40px;
+    padding-left: 30px;
+    text-decoration: none;
   }
 
   .mobile-social {
+    display: block;
     padding-inline: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-    /* identical to box height, or 122% */
-
     letter-spacing: 0.02em;
+    color: $blue;
   }
 }
